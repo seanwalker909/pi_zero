@@ -1,0 +1,12 @@
+[Unit]
+Description=E-Ink Clock Service
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/pi/e-Paper/RaspberryPi_JetsonNano/python/ink_clock.py
+Restart=on-failure
+User=root
+
+[Install]
+WantedBy=multi-user.target
