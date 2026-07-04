@@ -13,3 +13,15 @@ git clone https://github.com/waveshare/e-Paper.git
 cd e-Paper/RaspberryPi_JetsonNano/python
 ```
 
+
+Create service in systemd, copy paste inkclock.service:
+```bash
+sudo nano /etc/systemd/system/inkclock.service
+```
+
+Enable and start the service:
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable inkclock.service
+sudo systemctl start inkclock.service
+```
