@@ -13,6 +13,9 @@ git clone https://github.com/waveshare/e-Paper.git
 cd e-Paper/RaspberryPi_JetsonNano/python
 ```
 
+Paste CTA API Key into CTA-tracker.py. 
+Obtain API Key here: https://www.ctabustracker.com/home
+No fancy secrets managment, because we home labbin' :)'
 
 Create service in systemd, copy paste ctatracker.service:
 ```bash
