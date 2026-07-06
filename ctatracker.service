@@ -4,7 +4,7 @@ After=multi-user.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/python3 /home/pi/e-Paper/RaspberryPi_JetsonNano/python/ink_clock.py
+ExecStart=/usr/bin/python3 /home/pi/e-Paper/RaspberryPi_JetsonNano/python/CTA-tracker.py
 Restart=on-failure
 User=root
 
