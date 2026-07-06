@@ -1,5 +1,5 @@
 [Unit]
-Description=E-Ink Clock Service
+Description=CTA Tracker Service
 After=multi-user.target
 
 [Service]
