@@ -3,7 +3,7 @@ homelab pi zero code, and bootstrapping scripts for 2.13 in waveshare e-ink disp
 
 Dependencies:
 
-After flashing the 32 bit os, install dependencies and obtain drivers for wavesphere display
+After flashing the 32 bit os, SSH in to install dependencies and obtain drivers for wavesphere display
 ```bash
 sudo apt-get update
 sudo apt-get install -y python3-pip python3-pil python3-numpy git
