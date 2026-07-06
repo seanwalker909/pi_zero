@@ -1,6 +1,6 @@
 # pi_zero
 
-![CTA Prediction Tracker](./picture.png)
+![CTA Prediction Tracker](./picture.jpg)
 
 
 homelab pi zero code, and bootstrapping scripts for 2.13 in waveshare e-ink display
