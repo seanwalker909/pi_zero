@@ -14,14 +14,14 @@ cd e-Paper/RaspberryPi_JetsonNano/python
 ```
 
 
-Create service in systemd, copy paste inkclock.service:
+Create service in systemd, copy paste ctatracker.service:
 ```bash
-sudo nano /etc/systemd/system/inkclock.service
+sudo nano /etc/systemd/system/ctatracker.service
 ```
 
 Enable and start the service:
 ```bash
 sudo systemctl daemon-reload
-sudo systemctl enable inkclock.service
-sudo systemctl start inkclock.service
+sudo systemctl enable ctatracker.service
+sudo systemctl start ctatracker.service
 ```
