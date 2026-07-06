@@ -1,5 +1,5 @@
 # pi_zero
-homelab pi zero code
+homelab pi zero code, and bootstrapping scripts for 2.13 in waveshare e-ink display
 
 Dependencies:
 
