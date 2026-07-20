@@ -1,12 +1,15 @@
 [Unit]
 Description=CTA Tracker Service
-After=multi-user.target
+After=network.target
 
 [Service]
-Type=simple
-ExecStart=/usr/bin/python3 /home/pi/e-Paper/RaspberryPi_JetsonNano/python/CTA-tracker.py
-Restart=on-failure
-User=root
+# Change 'pi' to your actual username
+User=pi
+WorkingDirectory=/home/pi/pi_zero
+# Explicitly use the python executable within the virtual environment
+ExecStart=/home/pi/pi_zero/venv/bin/python app.py
+Restart=always
+RestartSec=5
 
 [Install]
 WantedBy=multi-user.target
