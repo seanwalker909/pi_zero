@@ -2,6 +2,8 @@
 
 This repository implements a real-time display for CTA (Chicago Transit Authority) bus arrivals, local weather, and air quality on an E-ink display.
 
+**Status:** ✅ Working (Display loop active)
+
 This implementation follows the **Raspberry Pi Service Deployment Skill** (see [pi_lab/skill.md](https://github.com/seanwalker909/pi_lab/blob/main/skill.md)).
 
 ## Features
@@ -35,6 +37,20 @@ source venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
+```
+
+### 2.5 Waveshare Library Setup
+If you encounter "Error: Waveshare library not found", you must fetch the driver library from the official repository. This project requires the `lib` folder from `waveshareteam/e-Paper`.
+
+```bash
+# Clone the repository (temporary)
+git clone --depth 1 https://github.com/waveshareteam/e-Paper.git temp-e-paper
+
+# Copy the lib folder to your project root
+cp -r temp-e-paper/RaspberryPi_JetsonNano/python/lib ./lib
+
+# Clean up
+rm -rf temp-e-paper
 ```
 
 ### 3. Configuration
